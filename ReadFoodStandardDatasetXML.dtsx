@@ -1,0 +1,1645 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/14/2024 9:20:22 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-P8DQK1O"
+  DTS:CreatorName="DESKTOP-P8DQK1O\Acer"
+  DTS:DTSID="{2871189C-8610-42ED-A801-965CA6028E5A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{B0F55A41-9F68-4708-A26E-EA486B88EB78}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT_XML_Read"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{523EB2A0-1828-4D6A-A325-3BB1C244D48A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT_XML_Read"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT_XML_Read\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\DFT_XML_Read\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_XML_Read\Multicast.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\DFT_XML_Read\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_XML_Read\Multicast 1"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 1">
+              <inputs>
+                <input
+                  refId="Package\DFT_XML_Read\Multicast 1.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_XML_Read\Multicast 1.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\DFT_XML_Read\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_XML_Read\Multicast 1 1 1"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 1 1 1">
+              <inputs>
+                <input
+                  refId="Package\DFT_XML_Read\Multicast 1 1 1.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_XML_Read\Multicast 1 1 1.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\DFT_XML_Read\Multicast 1 1 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_XML_Read\Multicast 1 1 1 1"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 1 1 1 1">
+              <inputs>
+                <input
+                  refId="Package\DFT_XML_Read\Multicast 1 1 1 1.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_XML_Read\Multicast 1 1 1 1.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\DFT_XML_Read\Multicast 1 1 1 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_XML_Read\Multicast 2"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 2">
+              <inputs>
+                <input
+                  refId="Package\DFT_XML_Read\Multicast 2.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_XML_Read\Multicast 2.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\DFT_XML_Read\Multicast 2.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_XML_Read\XML Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element.;Microsoft Corporation;Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element."
+              name="XML Source"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.XmlSourceAdapter</property>
+                <property
+                  dataType="System.String"
+                  description="The XML data used by the XML source adapter."
+                  expressionType="Notify"
+                  name="XMLData">C:\Users\Acer\Downloads\Food&amp;HygieneSource\FHRS626en-GB.xml</property>
+                <property
+                  dataType="System.String"
+                  description="The variable used by the XML source adapter to specify XML data."
+                  name="XMLDataVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Defines how the XML source adapter gets XML data."
+                  name="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The XML schema definition used by the XML source adapter."
+                  expressionType="Notify"
+                  name="XMLSchemaDefinition">C:\Users\Acer\Downloads\Food&amp;HygieneSource\FHRS626en-GB.xsd</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Identifies whether or not to use inline schema."
+                  name="UseInlineSchema">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Defines how XML integer types are mapped."
+                  name="XMLIntegerMapping"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.XmlSourceAdapter+XMLIntegerMappingConverter">0</property>
+              </properties>
+              <outputs>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[Header]"
+                  name="Header">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">Header</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header].Columns[ExtractDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Header].ExternalColumns[ExtractDate]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Header].Columns[ExtractDate]"
+                      name="ExtractDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header].Columns[ItemCount]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Header].ExternalColumns[ItemCount]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Header].Columns[ItemCount]"
+                      name="ItemCount"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header].Columns[ReturnCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Header].ExternalColumns[ReturnCode]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Header].Columns[ReturnCode]"
+                      name="ReturnCode"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header].ExternalColumns[ExtractDate]"
+                      dataType="dbTimeStamp"
+                      name="ExtractDate">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.DateTime</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header].ExternalColumns[ItemCount]"
+                      dataType="ui1"
+                      name="ItemCount">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header].ExternalColumns[ReturnCode]"
+                      dataType="wstr"
+                      length="255"
+                      name="ReturnCode">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output]"
+                  isErrorOut="true"
+                  name="Header Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">Header</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ExtractDate]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].ExternalColumns[ExtractDate]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ExtractDate]"
+                      name="ExtractDate" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ItemCount]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].ExternalColumns[ItemCount]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ItemCount]"
+                      name="ItemCount" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ReturnCode]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].ExternalColumns[ReturnCode]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ReturnCode]"
+                      name="ReturnCode" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].ExternalColumns[ExtractDate]"
+                      dataType="nText"
+                      name="ExtractDate" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].ExternalColumns[ItemCount]"
+                      dataType="nText"
+                      name="ItemCount" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Header Error Output].ExternalColumns[ReturnCode]"
+                      dataType="nText"
+                      name="ReturnCode" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[Scores]"
+                  name="Scores">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">Scores</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores].Columns[Hygiene]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Scores].ExternalColumns[Hygiene]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores].Columns[Hygiene]"
+                      name="Hygiene"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores].Columns[Structural]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Scores].ExternalColumns[Structural]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores].Columns[Structural]"
+                      name="Structural"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores].Columns[ConfidenceInManagement]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Scores].ExternalColumns[ConfidenceInManagement]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores].Columns[ConfidenceInManagement]"
+                      name="ConfidenceInManagement"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores].Columns[EstablishmentDetail_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Scores].ExternalColumns[EstablishmentDetail_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores].Columns[EstablishmentDetail_Id]"
+                      name="EstablishmentDetail_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores].ExternalColumns[Hygiene]"
+                      dataType="ui1"
+                      name="Hygiene">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores].ExternalColumns[Structural]"
+                      dataType="ui1"
+                      name="Structural">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores].ExternalColumns[ConfidenceInManagement]"
+                      dataType="ui1"
+                      name="ConfidenceInManagement">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores].ExternalColumns[EstablishmentDetail_Id]"
+                      dataType="ui8"
+                      name="EstablishmentDetail_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output]"
+                  isErrorOut="true"
+                  name="Scores Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">Scores</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[Hygiene]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].ExternalColumns[Hygiene]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[Hygiene]"
+                      name="Hygiene" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[Structural]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].ExternalColumns[Structural]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[Structural]"
+                      name="Structural" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[ConfidenceInManagement]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].ExternalColumns[ConfidenceInManagement]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[ConfidenceInManagement]"
+                      name="ConfidenceInManagement" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[EstablishmentDetail_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].ExternalColumns[EstablishmentDetail_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[EstablishmentDetail_Id]"
+                      name="EstablishmentDetail_Id" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].ExternalColumns[Hygiene]"
+                      dataType="nText"
+                      name="Hygiene" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].ExternalColumns[Structural]"
+                      dataType="nText"
+                      name="Structural" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].ExternalColumns[ConfidenceInManagement]"
+                      dataType="nText"
+                      name="ConfidenceInManagement" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Scores Error Output].ExternalColumns[EstablishmentDetail_Id]"
+                      dataType="nText"
+                      name="EstablishmentDetail_Id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode]"
+                  name="Geocode">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">Geocode</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].Columns[Longitude]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].ExternalColumns[Longitude]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].Columns[Longitude]"
+                      name="Longitude"
+                      scale="10"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].Columns[Latitude]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].ExternalColumns[Latitude]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].Columns[Latitude]"
+                      name="Latitude"
+                      scale="10"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].Columns[EstablishmentDetail_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].ExternalColumns[EstablishmentDetail_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].Columns[EstablishmentDetail_Id]"
+                      name="EstablishmentDetail_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].ExternalColumns[Longitude]"
+                      dataType="decimal"
+                      name="Longitude"
+                      scale="10">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Decimal</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].ExternalColumns[Latitude]"
+                      dataType="decimal"
+                      name="Latitude"
+                      scale="10">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Decimal</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode].ExternalColumns[EstablishmentDetail_Id]"
+                      dataType="ui8"
+                      name="EstablishmentDetail_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output]"
+                  isErrorOut="true"
+                  name="Geocode Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">Geocode</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[Longitude]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].ExternalColumns[Longitude]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[Longitude]"
+                      name="Longitude" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[Latitude]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].ExternalColumns[Latitude]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[Latitude]"
+                      name="Latitude" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[EstablishmentDetail_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].ExternalColumns[EstablishmentDetail_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[EstablishmentDetail_Id]"
+                      name="EstablishmentDetail_Id" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].ExternalColumns[Longitude]"
+                      dataType="nText"
+                      name="Longitude" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].ExternalColumns[Latitude]"
+                      dataType="nText"
+                      name="Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[Geocode Error Output].ExternalColumns[EstablishmentDetail_Id]"
+                      dataType="nText"
+                      name="EstablishmentDetail_Id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail]"
+                  name="EstablishmentDetail">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">EstablishmentDetail</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[EstablishmentDetail_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[EstablishmentDetail_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[EstablishmentDetail_Id]"
+                      name="EstablishmentDetail_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[FHRSID]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[FHRSID]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[FHRSID]"
+                      name="FHRSID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityBusinessID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityBusinessID]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityBusinessID]"
+                      name="LocalAuthorityBusinessID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[BusinessName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[BusinessName]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[BusinessName]"
+                      name="BusinessName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[BusinessType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[BusinessType]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[BusinessType]"
+                      name="BusinessType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[BusinessTypeID]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[BusinessTypeID]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[BusinessTypeID]"
+                      name="BusinessTypeID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[AddressLine1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[AddressLine1]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[AddressLine1]"
+                      name="AddressLine1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[AddressLine2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[AddressLine2]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[AddressLine2]"
+                      name="AddressLine2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[AddressLine3]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[AddressLine3]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[AddressLine3]"
+                      name="AddressLine3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[AddressLine4]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[AddressLine4]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[AddressLine4]"
+                      name="AddressLine4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[PostCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[PostCode]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[PostCode]"
+                      name="PostCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[RatingValue]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[RatingValue]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[RatingValue]"
+                      name="RatingValue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[RatingKey]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[RatingKey]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[RatingKey]"
+                      name="RatingKey"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[RatingDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[RatingDate]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[RatingDate]"
+                      name="RatingDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityCode]"
+                      dataType="ui2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityCode]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityCode]"
+                      name="LocalAuthorityCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityName]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityName]"
+                      name="LocalAuthorityName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityWebSite]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityWebSite]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityWebSite]"
+                      name="LocalAuthorityWebSite"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityEmailAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityEmailAddress]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[LocalAuthorityEmailAddress]"
+                      name="LocalAuthorityEmailAddress"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[SchemeType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[SchemeType]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[SchemeType]"
+                      name="SchemeType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[NewRatingPending]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[NewRatingPending]"
+                      length="255"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[NewRatingPending]"
+                      name="NewRatingPending"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[EstablishmentCollection_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[EstablishmentCollection_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].Columns[EstablishmentCollection_Id]"
+                      name="EstablishmentCollection_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[EstablishmentDetail_Id]"
+                      dataType="ui8"
+                      name="EstablishmentDetail_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[FHRSID]"
+                      dataType="ui4"
+                      name="FHRSID">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt32</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityBusinessID]"
+                      dataType="wstr"
+                      length="255"
+                      name="LocalAuthorityBusinessID">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[BusinessName]"
+                      dataType="wstr"
+                      length="255"
+                      name="BusinessName">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[BusinessType]"
+                      dataType="wstr"
+                      length="255"
+                      name="BusinessType">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[BusinessTypeID]"
+                      dataType="ui1"
+                      name="BusinessTypeID">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[AddressLine1]"
+                      dataType="wstr"
+                      length="255"
+                      name="AddressLine1">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[AddressLine2]"
+                      dataType="wstr"
+                      length="255"
+                      name="AddressLine2">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[AddressLine3]"
+                      dataType="wstr"
+                      length="255"
+                      name="AddressLine3">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[AddressLine4]"
+                      dataType="wstr"
+                      length="255"
+                      name="AddressLine4">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[PostCode]"
+                      dataType="wstr"
+                      length="255"
+                      name="PostCode">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[RatingValue]"
+                      dataType="ui1"
+                      name="RatingValue">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[RatingKey]"
+                      dataType="wstr"
+                      length="255"
+                      name="RatingKey">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[RatingDate]"
+                      dataType="dbTimeStamp"
+                      name="RatingDate">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.DateTime</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityCode]"
+                      dataType="ui2"
+                      name="LocalAuthorityCode">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt16</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityName]"
+                      dataType="wstr"
+                      length="255"
+                      name="LocalAuthorityName">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityWebSite]"
+                      dataType="wstr"
+                      length="255"
+                      name="LocalAuthorityWebSite">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[LocalAuthorityEmailAddress]"
+                      dataType="wstr"
+                      length="255"
+                      name="LocalAuthorityEmailAddress">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[SchemeType]"
+                      dataType="wstr"
+                      length="255"
+                      name="SchemeType">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[NewRatingPending]"
+                      dataType="wstr"
+                      length="255"
+                      name="NewRatingPending">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail].ExternalColumns[EstablishmentCollection_Id]"
+                      dataType="ui8"
+                      name="EstablishmentCollection_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output]"
+                  isErrorOut="true"
+                  name="EstablishmentDetail Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">EstablishmentDetail</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[EstablishmentDetail_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[EstablishmentDetail_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[EstablishmentDetail_Id]"
+                      name="EstablishmentDetail_Id" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[FHRSID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[FHRSID]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[FHRSID]"
+                      name="FHRSID" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityBusinessID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityBusinessID]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityBusinessID]"
+                      name="LocalAuthorityBusinessID" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[BusinessName]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[BusinessName]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[BusinessName]"
+                      name="BusinessName" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[BusinessType]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[BusinessType]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[BusinessType]"
+                      name="BusinessType" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[BusinessTypeID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[BusinessTypeID]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[BusinessTypeID]"
+                      name="BusinessTypeID" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[AddressLine1]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[AddressLine1]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[AddressLine1]"
+                      name="AddressLine1" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[AddressLine2]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[AddressLine2]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[AddressLine2]"
+                      name="AddressLine2" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[AddressLine3]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[AddressLine3]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[AddressLine3]"
+                      name="AddressLine3" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[AddressLine4]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[AddressLine4]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[AddressLine4]"
+                      name="AddressLine4" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[PostCode]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[PostCode]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[PostCode]"
+                      name="PostCode" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[RatingValue]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[RatingValue]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[RatingValue]"
+                      name="RatingValue" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[RatingKey]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[RatingKey]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[RatingKey]"
+                      name="RatingKey" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[RatingDate]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[RatingDate]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[RatingDate]"
+                      name="RatingDate" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityCode]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityCode]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityCode]"
+                      name="LocalAuthorityCode" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityName]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityName]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityName]"
+                      name="LocalAuthorityName" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityWebSite]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityWebSite]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityWebSite]"
+                      name="LocalAuthorityWebSite" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityEmailAddress]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityEmailAddress]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[LocalAuthorityEmailAddress]"
+                      name="LocalAuthorityEmailAddress" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[SchemeType]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[SchemeType]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[SchemeType]"
+                      name="SchemeType" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[NewRatingPending]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[NewRatingPending]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[NewRatingPending]"
+                      name="NewRatingPending" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[EstablishmentCollection_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[EstablishmentCollection_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[EstablishmentCollection_Id]"
+                      name="EstablishmentCollection_Id" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[EstablishmentDetail_Id]"
+                      dataType="nText"
+                      name="EstablishmentDetail_Id" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[FHRSID]"
+                      dataType="nText"
+                      name="FHRSID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityBusinessID]"
+                      dataType="nText"
+                      name="LocalAuthorityBusinessID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[BusinessName]"
+                      dataType="nText"
+                      name="BusinessName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[BusinessType]"
+                      dataType="nText"
+                      name="BusinessType" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[BusinessTypeID]"
+                      dataType="nText"
+                      name="BusinessTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[AddressLine1]"
+                      dataType="nText"
+                      name="AddressLine1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[AddressLine2]"
+                      dataType="nText"
+                      name="AddressLine2" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[AddressLine3]"
+                      dataType="nText"
+                      name="AddressLine3" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[AddressLine4]"
+                      dataType="nText"
+                      name="AddressLine4" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[PostCode]"
+                      dataType="nText"
+                      name="PostCode" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[RatingValue]"
+                      dataType="nText"
+                      name="RatingValue" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[RatingKey]"
+                      dataType="nText"
+                      name="RatingKey" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[RatingDate]"
+                      dataType="nText"
+                      name="RatingDate" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityCode]"
+                      dataType="nText"
+                      name="LocalAuthorityCode" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityName]"
+                      dataType="nText"
+                      name="LocalAuthorityName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityWebSite]"
+                      dataType="nText"
+                      name="LocalAuthorityWebSite" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[LocalAuthorityEmailAddress]"
+                      dataType="nText"
+                      name="LocalAuthorityEmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[SchemeType]"
+                      dataType="nText"
+                      name="SchemeType" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[NewRatingPending]"
+                      dataType="nText"
+                      name="NewRatingPending" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail Error Output].ExternalColumns[EstablishmentCollection_Id]"
+                      dataType="nText"
+                      name="EstablishmentCollection_Id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection]"
+                  name="EstablishmentCollection">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">EstablishmentCollection</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection].Columns[EstablishmentCollection_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection].ExternalColumns[EstablishmentCollection_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection].Columns[EstablishmentCollection_Id]"
+                      name="EstablishmentCollection_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection].ExternalColumns[EstablishmentCollection_Id]"
+                      dataType="ui8"
+                      name="EstablishmentCollection_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection Error Output]"
+                  isErrorOut="true"
+                  name="EstablishmentCollection Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">EstablishmentCollection</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection Error Output].Columns[EstablishmentCollection_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection Error Output].ExternalColumns[EstablishmentCollection_Id]"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection Error Output].Columns[EstablishmentCollection_Id]"
+                      name="EstablishmentCollection_Id" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection Error Output].ExternalColumns[EstablishmentCollection_Id]"
+                      dataType="nText"
+                      name="EstablishmentCollection_Id" />
+                  </externalMetadataColumns>
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT_XML_Read.Paths[EstablishmentCollection]"
+              endId="Package\DFT_XML_Read\Multicast.Inputs[Multicast Input 1]"
+              name="EstablishmentCollection"
+              startId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentCollection]" />
+            <path
+              refId="Package\DFT_XML_Read.Paths[EstablishmentDetail]"
+              endId="Package\DFT_XML_Read\Multicast 1 1 1 1.Inputs[Multicast Input 1]"
+              name="EstablishmentDetail"
+              startId="Package\DFT_XML_Read\XML Source.Outputs[EstablishmentDetail]" />
+            <path
+              refId="Package\DFT_XML_Read.Paths[Geocode]"
+              endId="Package\DFT_XML_Read\Multicast 1.Inputs[Multicast Input 1]"
+              name="Geocode"
+              startId="Package\DFT_XML_Read\XML Source.Outputs[Geocode]" />
+            <path
+              refId="Package\DFT_XML_Read.Paths[Header]"
+              endId="Package\DFT_XML_Read\Multicast 2.Inputs[Multicast Input 1]"
+              name="Header"
+              startId="Package\DFT_XML_Read\XML Source.Outputs[Header]" />
+            <path
+              refId="Package\DFT_XML_Read.Paths[Scores]"
+              endId="Package\DFT_XML_Read\Multicast 1 1 1.Inputs[Multicast Input 1]"
+              name="Scores"
+              startId="Package\DFT_XML_Read\XML Source.Outputs[Scores]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\DFT_XML_Read"
+          TopLeft="118.333326867885,136.933332381116" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT_XML_Read">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="128,41.6"
+          Id="Package\DFT_XML_Read\Multicast 2"
+          TopLeft="415.999993801117,286.99999602139" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\DFT_XML_Read\Multicast 1 1 1 1"
+          TopLeft="285.999995738268,319.199995946884" />
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\DFT_XML_Read\Multicast 1 1 1"
+          TopLeft="124.999998137355,325.199998182058" />
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\DFT_XML_Read\Multicast 1"
+          TopLeft="232.99999652803,220.999996706843" />
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\DFT_XML_Read\Multicast"
+          TopLeft="62.9999990612268,214.99999679625" />
+        <NodeLayout
+          Size="135.2,41.6"
+          Id="Package\DFT_XML_Read\XML Source"
+          TopLeft="165.999997526407,100.999998494983" />
+        <EdgeLayout
+          Id="Package\DFT_XML_Read.Paths[Scores]"
+          TopLeft="220.879997526407,142.599998494983">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-36.2799993890525,182.599999687076"
+              Start="0,0"
+              End="-36.2799993890525,175.099999687076">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.8181579264101" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,77.8181579264101"
+                    Point2="0,81.8181579264101"
+                    Point3="-4,81.8181579264101" />
+                  <mssgle:LineSegment
+                    End="-32.2799993890525,81.8181579264101" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.2799993890525,81.8181579264101"
+                    Point2="-36.2799993890525,81.8181579264101"
+                    Point3="-36.2799993890525,85.8181579264101" />
+                  <mssgle:LineSegment
+                    End="-36.2799993890525,175.099999687076" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-42.0112301632762,86.8181579264101,47.7424609375,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_XML_Read.Paths[Header]"
+          TopLeft="275.999997526407,142.599998494983">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="203.99999627471,144.399997526407"
+              Start="0,0"
+              End="203.99999627471,136.899997526407">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.2120682938089" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.2120682938089"
+                    Point2="0,39.2120682938089"
+                    Point3="4,39.2120682938089" />
+                  <mssgle:LineSegment
+                    End="199.99999627471,39.2120682938089" />
+                  <mssgle:CubicBezierSegment
+                    Point1="199.99999627471,39.2120682938089"
+                    Point2="203.99999627471,39.2120682938089"
+                    Point3="203.99999627471,43.2120682938089" />
+                  <mssgle:LineSegment
+                    End="203.99999627471,136.899997526407" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="76.6976543873549,44.2120682938089,50.6046875,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_XML_Read.Paths[Geocode]"
+          TopLeft="254.799997526407,142.599998494983">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="37.7999990016222,78.3999982118607"
+              Start="0,0"
+              End="37.7999990016222,70.8999982118607">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.9101747107924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.9101747107924"
+                    Point2="0,31.9101747107924"
+                    Point3="4,31.9101747107924" />
+                  <mssgle:LineSegment
+                    End="33.7999990016222,31.9101747107924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33.7999990016222,31.9101747107924"
+                    Point2="37.7999990016222,31.9101747107924"
+                    Point3="37.7999990016222,35.9101747107924" />
+                  <mssgle:LineSegment
+                    End="37.7999990016222,70.8999982118607" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-9.56500049918888,36.9101747107924,56.93,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_XML_Read.Paths[EstablishmentDetail]"
+          TopLeft="271.759997526407,142.599998494983">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="91.0399982118606,176.599997451901"
+              Start="0,0"
+              End="91.0399982118606,169.099997451901">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5769159623246" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.5769159623246"
+                    Point2="0,53.5769159623246"
+                    Point3="4,53.5769159623246" />
+                  <mssgle:LineSegment
+                    End="87.0399982118606,53.5769159623246" />
+                  <mssgle:CubicBezierSegment
+                    Point1="87.0399982118606,53.5769159623246"
+                    Point2="91.0399982118606,53.5769159623246"
+                    Point3="91.0399982118606,57.5769159623246" />
+                  <mssgle:LineSegment
+                    End="91.0399982118606,169.099997451901" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-6.93578214406969,58.5769159623246,104.9115625,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_XML_Read.Paths[EstablishmentCollection]"
+          TopLeft="233.599997526407,142.599998494983">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-110.99999846518,72.3999983012677"
+              Start="0,0"
+              End="-110.99999846518,64.8999983012677">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.1999991506338" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.1999991506338"
+                    Point2="0,36.1999991506338"
+                    Point3="-4,36.1999991506338" />
+                  <mssgle:LineSegment
+                    End="-106.99999846518,36.1999991506338" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-106.99999846518,36.1999991506338"
+                    Point2="-110.99999846518,36.1999991506338"
+                    Point3="-110.99999846518,40.1999991506338" />
+                  <mssgle:LineSegment
+                    End="-110.99999846518,64.8999983012677" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-116.64558517009,41.1999991506338,122.291171875,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="D"
+          ParentId="Package\DFT_XML_Read"
+          FontInfo="{assembly:Null}"
+          Size="37.6,60"
+          Id="1c289f2e-cc9d-43b3-bf6b-661ecd7a8ba0"
+          TopLeft="211.66665510171,140.399999023676" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
