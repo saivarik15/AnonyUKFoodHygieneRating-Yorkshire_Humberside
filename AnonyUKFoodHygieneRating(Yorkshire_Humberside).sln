@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "AnonyUKFoodHygieneRating(Yorkshire_Humberside)", "AnonyUKFoodHygieneRating(Yorkshire_Humberside).dtproj", "{043731E3-104E-426D-938D-EE24A55885E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{043731E3-104E-426D-938D-EE24A55885E3}.Development|Default.ActiveCfg = Development
+		{043731E3-104E-426D-938D-EE24A55885E3}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7D4AEE3-37DC-4740-8542-1078286A5825}
+	EndGlobalSection
+EndGlobal
