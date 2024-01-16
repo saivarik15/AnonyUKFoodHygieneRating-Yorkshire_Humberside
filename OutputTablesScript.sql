@@ -5,47 +5,31 @@ CREATE TABLE EstablishmentCollection (
     ReturnCode VARCHAR(20)
 );
 
-
-CREATE TABLE EstablishmentDetails (
-    EstablishmentDetail_Id INT PRIMARY KEY,
-    FHRSID INT,
-    LocalAuthorityBusinessID VARCHAR(50),
+CREATE TABLE  FoodHygDetailsRating(
+    EstablishmentDetail_Id INT,
+	FHRSID VARCHAR(100),
     BusinessName VARCHAR(255),
     BusinessType VARCHAR(255),
     BusinessTypeID INT,
     AddressLine1 VARCHAR(255),
     AddressLine2 VARCHAR(255),
     AddressLine3 VARCHAR(255),
-    AddressLine4 VARCHAR(255),
-    PostCode VARCHAR(20),
-    RatingValue INT,
+    PostCode VARCHAR(10),
+    RatingValue VARCHAR(100),
     RatingKey VARCHAR(20),
-    RatingDate DATETIME,
+    RatingDate DATE,
+	LocalAuthorityBusinessID VARCHAR(255),
     LocalAuthorityCode INT,
     LocalAuthorityName VARCHAR(255),
     LocalAuthorityWebSite VARCHAR(255),
     LocalAuthorityEmailAddress VARCHAR(255),
-    SchemeType VARCHAR(20),
-    NewRatingPending INT,
-    EstablishmentCollection_Id INT,
-    FOREIGN KEY (EstablishmentCollection_Id) REFERENCES EstablishmentCollection(EstablishmentCollection_Id)
-);
-
-
-CREATE TABLE GeoCodeData (
-    GeoCodeDataId INT PRIMARY KEY,
-    Longitude FLOAT,
-    Latitude FLOAT,
-    EstablishmentDetail_Id INT,
-    FOREIGN KEY (EstablishmentDetail_Id) REFERENCES EstablishmentDetails(EstablishmentDetail_Id)
-);
-
-CREATE TABLE HygieneScores (
-    HygieneScoreId INT PRIMARY KEY,
-    Hygiene INT,
-    Structural INT,
-    ConfidenceInManagement INT,
-    EstablishmentDetail_Id INT,
-    FOREIGN KEY (EstablishmentDetail_Id) REFERENCES EstablishmentDetails(EstablishmentDetail_Id)
-);
-
+    HygieneScore INT,
+    StructuralScore INT,
+    ConfidenceInManagementScore INT,
+    SchemeType VARCHAR(50),
+    NewRatingPending BIT,
+    Longitude VARCHAR(255),
+    Latitude VARCHAR(255),
+    AddressLine4 VARCHAR(255),
+	EstablishmentCollection_Id INT
+) ;
