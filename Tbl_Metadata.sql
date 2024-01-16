@@ -25,3 +25,20 @@ CREATE INDEX idx_dataset_name ON Tbl_metadata (Loadname);
 -- Add Index on Creator/Owner for Faster Lookups
 CREATE INDEX idx_creator_owner ON Tbl_metadata (creator_owner);
 
+
+CREATE TABLE [dbo].[LogTable](
+	[LoadID] [int] NULL,
+	[LoadName] [varchar](50) NULL,
+	[LoadType] [varchar](10) NULL,
+	[SourceLocation] [varchar](255) NULL,
+	[RawFileLocation] [varchar](255) NULL,
+	[DestinationLocation] [varchar](255) NULL,
+	[Status] [varchar](255) NULL,
+	[RecordCount] [int] NULL,
+	ExtractDate varchar(50),
+	[LoadDate] [datetime] NULL,
+	[LogPath] [varchar](255) NULL
+) ON [PRIMARY]
+GO
+
+
