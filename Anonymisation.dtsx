@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ChildPAckage"
   DTS:PackageType="5"
-  DTS:VersionBuild="132"
-  DTS:VersionGUID="{F1353149-2887-44EE-BEFA-80A940F48F8B}">
+  DTS:VersionBuild="133"
+  DTS:VersionGUID="{58C64BB7-9EFA-42ED-BAE4-FE8ABA7E0E87}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9DgRYWQz90C4J4dTc8+xKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADKpGX0lnG2DT66geY3d09/XP34Xj30jYr8KhzLDSQSlwAAAAAOgAAAAAIAACAAAADOIey+dGpcu37eDMheTYrnobp6nSU9m9S23QfQEoC/7SAAAABU8CfxYmtlhYVFYxlwcswuo1JQWPVAyNfFyBqvwJ+n2kAAAADup5M2wZdBXw/OvIzMv7HKGh0F5vhyb4Zu9Dk72xFQzzpCU+8lvy/o6UogpGWtFZITJbMlGlNclpwJYcNDd3GB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9DgRYWQz90C4J4dTc8+xKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACz8gXALxv5Qnc/+rgrYQ6ISeZCEYDbkWlOJevadX00mQAAAAAOgAAAAAIAACAAAACcIQGPmJ90o8E++WNK2ownXnI5mnP3VOIrbmRbuaKxDyAAAACGwxSYKT9aehad0qSYZ1b9UgEnwFfOqUxahjmhGP3z3UAAAAD6wBAGfCDXxlBHvWblytgqKE9rTneFLFbV/DfI8tYLj9XSk1fp36aBLCBnyvZYGGvbB7NVIzx6xTH3EHNgVoWM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -6306,270 +6306,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3"
-                  componentClassID="Microsoft.Sort"
-                  contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-                  description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-                  name="Sort 3"
-                  version="1">
-                  <properties>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                      name="EliminateDuplicates">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the maximum number of threads to use for sorting."
-                      expressionType="Notify"
-                      name="MaximumThreads">-1</property>
-                  </properties>
-                  <inputs>
-                    <input
-                      refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Inputs[Sort Input]"
-                      name="Sort Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Inputs[Sort Input].Columns[ExtractDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ExtractDate"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\XML Source.Outputs[Header].Columns[ExtractDate]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">1</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Inputs[Sort Input].Columns[ItemCount]"
-                          cachedDataType="ui2"
-                          cachedName="ItemCount"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\XML Source.Outputs[Header].Columns[ItemCount]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Inputs[Sort Input].Columns[ReturnCode]"
-                          cachedDataType="wstr"
-                          cachedLength="255"
-                          cachedName="ReturnCode"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\XML Source.Outputs[Header].Columns[ReturnCode]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Inputs[Sort Input].Columns[Copy of ReturnCode]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="255"
-                          cachedName="Copy of ReturnCode"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\Data Conversion - UniCode to String.Outputs[Data Conversion Output].Columns[Copy of ReturnCode]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">2</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Inputs[Sort Input].Columns[Copy of ItemCount]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Copy of ItemCount"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\Data Conversion - UniCode to String.Outputs[Data Conversion Output].Columns[Copy of ItemCount]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">3</property>
-                          </properties>
-                        </inputColumn>
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output]"
-                      isSorted="true"
-                      name="Sort Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[ExtractDate]"
-                          dataType="dbTimeStamp"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[ExtractDate]"
-                          name="ExtractDate"
-                          sortKeyPosition="1">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Foreach Loop Container\DFT_Read_XML\XML Source.Outputs[Header].Columns[ExtractDate]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[ItemCount]"
-                          dataType="ui2"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[ItemCount]"
-                          name="ItemCount">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Foreach Loop Container\DFT_Read_XML\XML Source.Outputs[Header].Columns[ItemCount]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[ReturnCode]"
-                          dataType="wstr"
-                          length="255"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[ReturnCode]"
-                          name="ReturnCode">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Foreach Loop Container\DFT_Read_XML\XML Source.Outputs[Header].Columns[ReturnCode]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[Copy of ReturnCode]"
-                          codePage="1252"
-                          dataType="str"
-                          length="255"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[Copy of ReturnCode]"
-                          name="Copy of ReturnCode"
-                          sortKeyPosition="2">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Foreach Loop Container\DFT_Read_XML\Data Conversion - UniCode to String.Outputs[Data Conversion Output].Columns[Copy of ReturnCode]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[Copy of ItemCount]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Outputs[Sort Output].Columns[Copy of ItemCount]"
-                          name="Copy of ItemCount"
-                          sortKeyPosition="3">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Foreach Loop Container\DFT_Read_XML\Data Conversion - UniCode to String.Outputs[Data Conversion Output].Columns[Copy of ItemCount]}</property>
-                          </properties>
-                        </outputColumn>
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 4"
-                  componentClassID="Microsoft.Sort"
-                  contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-                  description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-                  name="Sort 4"
-                  version="1">
-                  <properties>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                      name="EliminateDuplicates">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the maximum number of threads to use for sorting."
-                      expressionType="Notify"
-                      name="MaximumThreads">-1</property>
-                  </properties>
-                  <inputs>
-                    <input
-                      refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 4.Inputs[Sort Input]"
-                      name="Sort Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 4.Inputs[Sort Input].Columns[EstablishmentCollection_Id]"
-                          cachedDataType="ui8"
-                          cachedName="EstablishmentCollection_Id"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\XML Source.Outputs[EstablishmentCollection].Columns[EstablishmentCollection_Id]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">1</property>
-                          </properties>
-                        </inputColumn>
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 4.Outputs[Sort Output]"
-                      isSorted="true"
-                      name="Sort Output">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\DFT_Read_XML\Sort 4.Outputs[Sort Output].Columns[EstablishmentCollection_Id]"
-                          dataType="ui8"
-                          lineageId="Package\Foreach Loop Container\DFT_Read_XML\Sort 4.Outputs[Sort Output].Columns[EstablishmentCollection_Id]"
-                          name="EstablishmentCollection_Id"
-                          sortKeyPosition="1">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Foreach Loop Container\DFT_Read_XML\XML Source.Outputs[EstablishmentCollection].Columns[EstablishmentCollection_Id]}</property>
-                          </properties>
-                        </outputColumn>
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
                   refId="Package\Foreach Loop Container\DFT_Read_XML\XML Source"
                   componentClassID="Microsoft.ManagedComponentHost"
                   contactInfo="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element.;Microsoft Corporation;Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
@@ -7810,11 +7546,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   name="Data Conversion Output"
                   startId="Package\Foreach Loop Container\DFT_Read_XML\Data Type Handling.Outputs[Data Conversion Output]" />
                 <path
-                  refId="Package\Foreach Loop Container\DFT_Read_XML.Paths[Data Conversion Output1]"
-                  endId="Package\Foreach Loop Container\DFT_Read_XML\Sort 3.Inputs[Sort Input]"
-                  name="Data Conversion Output"
-                  startId="Package\Foreach Loop Container\DFT_Read_XML\Data Conversion - UniCode to String.Outputs[Data Conversion Output]" />
-                <path
                   refId="Package\Foreach Loop Container\DFT_Read_XML.Paths[Derived Column Output]"
                   endId="Package\Foreach Loop Container\DFT_Read_XML\Sort.Inputs[Sort Input]"
                   name="Derived Column Output"
@@ -7824,11 +7555,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   endId="Package\Foreach Loop Container\DFT_Read_XML\Encyption.Inputs[Input 0]"
                   name="Derived Column Output"
                   startId="Package\Foreach Loop Container\DFT_Read_XML\Derived Column.Outputs[Derived Column Output]" />
-                <path
-                  refId="Package\Foreach Loop Container\DFT_Read_XML.Paths[EstablishmentCollection]"
-                  endId="Package\Foreach Loop Container\DFT_Read_XML\Sort 4.Inputs[Sort Input]"
-                  name="EstablishmentCollection"
-                  startId="Package\Foreach Loop Container\DFT_Read_XML\XML Source.Outputs[EstablishmentCollection]" />
                 <path
                   refId="Package\Foreach Loop Container\DFT_Read_XML.Paths[EstablishmentDetail]"
                   endId="Package\Foreach Loop Container\DFT_Read_XML\Data Type Handling.Inputs[Data Conversion Input]"
@@ -8220,26 +7946,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="119.2,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Multicast"
-          TopLeft="739.166626280382,269.533331459032" />
-        <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Merge Join 1"
-          TopLeft="471.999990165234,346.599997884631" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Merge Join"
-          TopLeft="755.053176568563,339.966664635672" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Sort"
-          TopLeft="377.833328643607,239.999998770555" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Data Type Handling"
-          TopLeft="636.666631880735,128.999999258717" />
-        <NodeLayout
           Size="196,41.6"
           Id="Package\Foreach Loop Container\DFT_Read_XML\Missing Value Handling 1"
           TopLeft="328.333315393992,142.133332344956" />
@@ -8252,13 +7958,301 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\Foreach Loop Container\DFT_Read_XML\Sort 1"
           TopLeft="589.166634476021,257.666665865117" />
         <NodeLayout
-          Size="246.4,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Data Conversion - UniCode to String"
-          TopLeft="4.2632564145606E-14,158.999999005595" />
+          Size="124,41.6"
+          Id="Package\Foreach Loop Container\DFT_Read_XML\Encyption"
+          TopLeft="431.666643081441,508.399997432629" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Foreach Loop Container\DFT_Read_XML\Merge Join 1"
+          TopLeft="471.999990165234,346.599997884631" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Foreach Loop Container\DFT_Read_XML\Data Type Handling"
+          TopLeft="636.666631880735,128.999999258717" />
         <NodeLayout
           Size="135.2,41.6"
           Id="Package\Foreach Loop Container\DFT_Read_XML\XML Source"
           TopLeft="336.666648272011,20.7999998553594" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Foreach Loop Container\DFT_Read_XML\Derived Column"
+          TopLeft="646.56663584196,434.599999041756" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Foreach Loop Container\DFT_Read_XML\OLE DB Destination"
+          TopLeft="341.566652506424,607.066663785908" />
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\Foreach Loop Container\DFT_Read_XML\Multicast"
+          TopLeft="854.166622182563,270.399998119672" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Foreach Loop Container\DFT_Read_XML\Sort"
+          TopLeft="377.833328643607,239.999998770555" />
+        <NodeLayout
+          Size="246.4,41.6"
+          Id="Package\Foreach Loop Container\DFT_Read_XML\Data Conversion - UniCode to String"
+          TopLeft="4.2632564145606E-14,158.999999005595" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Foreach Loop Container\DFT_Read_XML\Merge Join"
+          TopLeft="755.053176568563,339.966664635672" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Merge Join Output]"
+          TopLeft="610.399990165234,364.083331260151">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144.653186403329,0"
+              Start="0,0"
+              End="137.153186403329,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="137.153186403329,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Header]"
+          TopLeft="372.466648272011,62.3999998553594">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-249.266648272011,96.599999150236"
+              Start="0,0"
+              End="-249.266648272011,89.099999150236">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.4456476748399" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.4456476748399"
+                    Point2="0,33.4456476748399"
+                    Point3="-4,33.4456476748399" />
+                  <mssgle:LineSegment
+                    End="-245.266648272011,33.4456476748399" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-245.266648272011,33.4456476748399"
+                    Point2="-249.266648272011,33.4456476748399"
+                    Point3="-249.266648272011,37.4456476748399" />
+                  <mssgle:LineSegment
+                    End="-249.266648272011,89.099999150236" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-149.935667886005,38.4456476748399,32.8673828125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Geocode]"
+          TopLeft="404.266648272011,62.3999998553594">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.0666671219807,79.7333324895963"
+              Start="0,0"
+              End="22.0666671219807,72.2333324895963">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.8666662447981" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.8666662447981"
+                    Point2="0,39.8666662447981"
+                    Point3="4,39.8666662447981" />
+                  <mssgle:LineSegment
+                    End="18.0666671219807,39.8666662447981" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.0666671219807,39.8666662447981"
+                    Point2="22.0666671219807,39.8666662447981"
+                    Point3="22.0666671219807,43.8666662447981" />
+                  <mssgle:LineSegment
+                    End="22.0666671219807,72.2333324895963" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8.77053362650965,44.8666662447981,39.607734375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[EstablishmentDetail]"
+          TopLeft="436.066648272011,62.3999998553594">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="285.799983608724,66.5999994033576"
+              Start="0,0"
+              End="285.799983608724,59.0999994033576">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.05880056712" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.05880056712"
+                    Point2="0,23.05880056712"
+                    Point3="4,23.05880056712" />
+                  <mssgle:LineSegment
+                    End="281.799983608724,23.05880056712" />
+                  <mssgle:CubicBezierSegment
+                    Point1="281.799983608724,23.05880056712"
+                    Point2="285.799983608724,23.05880056712"
+                    Point3="285.799983608724,27.05880056712" />
+                  <mssgle:LineSegment
+                    End="285.799983608724,59.0999994033576" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="99.312862898112,28.05880056712,87.1742578125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Derived Column Output1]"
+          TopLeft="722.96663584196,476.199999041756">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-229.299992760519,32.1999983908732"
+              Start="0,0"
+              End="-229.299992760519,24.6999983908732">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.0999991954366" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.0999991954366"
+                    Point2="0,16.0999991954366"
+                    Point3="-4,16.0999991954366" />
+                  <mssgle:LineSegment
+                    End="-225.299992760519,16.0999991954366" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-225.299992760519,16.0999991954366"
+                    Point2="-229.299992760519,16.0999991954366"
+                    Point3="-229.299992760519,20.0999991954366" />
+                  <mssgle:LineSegment
+                    End="-229.299992760519,24.6999983908732" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Derived Column Output]"
+          TopLeft="426.483322018799,183.733332344956">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.2666664255991"
+              Start="0,0"
+              End="0,48.7666664255991">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.7666664255991" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Data Conversion Output]"
+          TopLeft="694.799965214068,170.599999258717">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-52.0333307380473,87.0666666063996"
+              Start="0,0"
+              End="-52.0333307380473,79.5666666063996">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.3126201305955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.3126201305955"
+                    Point2="0,35.3126201305955"
+                    Point3="-4,35.3126201305955" />
+                  <mssgle:LineSegment
+                    End="-48.0333307380473,35.3126201305955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-48.0333307380473,35.3126201305955"
+                    Point2="-52.0333307380473,35.3126201305955"
+                    Point3="-52.0333307380473,39.3126201305955" />
+                  <mssgle:LineSegment
+                    End="-52.0333307380473,79.5666666063996" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Data Conversion Error Output]"
+          TopLeft="748.933298547402,170.599999258717">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="164.833323635161,99.799998860955"
+              Start="0,0"
+              End="164.833323635161,92.299998860955">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.4770227938385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.4770227938385"
+                    Point2="0,40.4770227938385"
+                    Point3="4,40.4770227938385" />
+                  <mssgle:LineSegment
+                    End="160.833323635161,40.4770227938385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="160.833323635161,40.4770227938385"
+                    Point2="164.833323635161,40.4770227938385"
+                    Point3="164.833323635161,44.4770227938385" />
+                  <mssgle:LineSegment
+                    End="164.833323635161,92.299998860955" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="16.3302750988306,45.4770227938385,132.1727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Sort Output2]"
           TopLeft="861.066625324225,68.4666664798392">
@@ -8386,19 +8380,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Merge Join Output]"
-          TopLeft="610.399990165234,364.083331260151">
+          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Output 0]"
+          TopLeft="493.666643081441,549.999997432629">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="144.653186403329,0"
+              EndConnector="-66.4999905750161,57.0666663532789"
               Start="0,0"
-              End="137.153186403329,0">
+              End="-66.4999905750161,49.5666663532789">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="137.153186403329,0" />
+                    End="0,24.5333331766395" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.5333331766395"
+                    Point2="0,28.5333331766395"
+                    Point3="-4,28.5333331766395" />
+                  <mssgle:LineSegment
+                    End="-62.4999905750161,28.5333331766395" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-62.4999905750161,28.5333331766395"
+                    Point2="-66.4999905750161,28.5333331766395"
+                    Point3="-66.4999905750161,32.5333331766395" />
+                  <mssgle:LineSegment
+                    End="-66.4999905750161,49.5666663532789" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8407,292 +8413,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Geocode]"
-          TopLeft="404.266648272011,62.3999998553594">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="22.0666671219807,79.7333324895963"
-              Start="0,0"
-              End="22.0666671219807,72.2333324895963">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.8666662447981" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35.8666662447981"
-                    Point2="0,39.8666662447981"
-                    Point3="4,39.8666662447981" />
-                  <mssgle:LineSegment
-                    End="18.0666671219807,39.8666662447981" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.0666671219807,39.8666662447981"
-                    Point2="22.0666671219807,39.8666662447981"
-                    Point3="22.0666671219807,43.8666662447981" />
-                  <mssgle:LineSegment
-                    End="22.0666671219807,72.2333324895963" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8.77053362650965,44.8666662447981,39.607734375,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[EstablishmentDetail]"
-          TopLeft="436.066648272011,62.3999998553594">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="285.799983608724,66.5999994033576"
-              Start="0,0"
-              End="285.799983608724,59.0999994033576">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.05880056712" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.05880056712"
-                    Point2="0,23.05880056712"
-                    Point3="4,23.05880056712" />
-                  <mssgle:LineSegment
-                    End="281.799983608724,23.05880056712" />
-                  <mssgle:CubicBezierSegment
-                    Point1="281.799983608724,23.05880056712"
-                    Point2="285.799983608724,23.05880056712"
-                    Point3="285.799983608724,27.05880056712" />
-                  <mssgle:LineSegment
-                    End="285.799983608724,59.0999994033576" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="99.312862898112,28.05880056712,87.1742578125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Derived Column Output]"
-          TopLeft="426.483322018799,183.733332344956">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56.2666664255991"
-              Start="0,0"
-              End="0,48.7666664255991">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.7666664255991" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Data Conversion Output]"
-          TopLeft="694.799965214068,170.599999258717">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-52.0333307380473,87.0666666063996"
-              Start="0,0"
-              End="-52.0333307380473,79.5666666063996">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.3126201305955" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.3126201305955"
-                    Point2="0,35.3126201305955"
-                    Point3="-4,35.3126201305955" />
-                  <mssgle:LineSegment
-                    End="-48.0333307380473,35.3126201305955" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-48.0333307380473,35.3126201305955"
-                    Point2="-52.0333307380473,35.3126201305955"
-                    Point3="-52.0333307380473,39.3126201305955" />
-                  <mssgle:LineSegment
-                    End="-52.0333307380473,79.5666666063996" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Data Conversion Error Output]"
-          TopLeft="748.933298547402,170.599999258717">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="49.8333277329806,98.9333322003152"
-              Start="0,0"
-              End="49.8333277329806,91.4333322003152">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.1255189203139" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,36.1255189203139"
-                    Point2="0,40.1255189203139"
-                    Point3="4,40.1255189203139" />
-                  <mssgle:LineSegment
-                    End="45.8333277329806,40.1255189203139" />
-                  <mssgle:CubicBezierSegment
-                    Point1="45.8333277329806,40.1255189203139"
-                    Point2="49.8333277329806,40.1255189203139"
-                    Point3="49.8333277329806,44.1255189203139" />
-                  <mssgle:LineSegment
-                    End="49.8333277329806,91.4333322003152" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-41.1697228522597,45.1255189203139,132.1727734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Header]"
-          TopLeft="372.466648272011,62.3999998553594">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-249.266648272011,96.599999150236"
-              Start="0,0"
-              End="-249.266648272011,89.099999150236">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.4456476748399" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.4456476748399"
-                    Point2="0,33.4456476748399"
-                    Point3="-4,33.4456476748399" />
-                  <mssgle:LineSegment
-                    End="-245.266648272011,33.4456476748399" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-245.266648272011,33.4456476748399"
-                    Point2="-249.266648272011,33.4456476748399"
-                    Point3="-249.266648272011,37.4456476748399" />
-                  <mssgle:LineSegment
-                    End="-249.266648272011,89.099999150236" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-149.935667886005,38.4456476748399,50.6046875,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Sort 3"
-          TopLeft="102.499994399647,243.733331983354" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Data Conversion Output1]"
-          TopLeft="123.2,200.599999005595">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="32.4999943996471,43.133332977759"
-              Start="0,0"
-              End="32.4999943996471,35.633332977759">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.5666664888795" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.5666664888795"
-                    Point2="0,21.5666664888795"
-                    Point3="4,21.5666664888795" />
-                  <mssgle:LineSegment
-                    End="28.4999943996471,21.5666664888795" />
-                  <mssgle:CubicBezierSegment
-                    Point1="28.4999943996471,21.5666664888795"
-                    Point2="32.4999943996471,21.5666664888795"
-                    Point3="32.4999943996471,25.5666664888795" />
-                  <mssgle:LineSegment
-                    End="32.4999943996471,35.633332977759" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Sort 4"
-          TopLeft="233.333320584563,245.399998571674" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[EstablishmentCollection]"
-          TopLeft="391.546648272011,62.3999998553594">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-105.013327687448,182.999998716315"
-              Start="0,0"
-              End="-105.013327687448,175.499998716315">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,77.9973867533585" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,77.9973867533585"
-                    Point2="0,81.9973867533585"
-                    Point3="-4,81.9973867533585" />
-                  <mssgle:LineSegment
-                    End="-101.013327687448,81.9973867533585" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-101.013327687448,81.9973867533585"
-                    Point2="-105.013327687448,81.9973867533585"
-                    Point3="-105.013327687448,85.9973867533585" />
-                  <mssgle:LineSegment
-                    End="-105.013327687448,175.499998716315" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-104.783597437474,86.9973867533585,104.5538671875,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="124,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Encyption"
-          TopLeft="539.1666372079,485.86666425599" />
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\Derived Column"
-          TopLeft="646.56663584196,434.599999041756" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Merge Join Output1]"
           TopLeft="819.853176568563,381.566664635672">
@@ -8719,72 +8439,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                     Point3="-96.8865407266026,30.516667203042" />
                   <mssgle:LineSegment
                     End="-96.8865407266026,45.5333344060841" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Derived Column Output1]"
-          TopLeft="646.56663584196,455.399999041756">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-45.3999986340604,30.4666652142338"
-              Start="0,0"
-              End="-45.3999986340604,22.9666652142338">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-41.3999986340604,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-41.3999986340604,0"
-                    Point2="-45.3999986340604,0"
-                    Point3="-45.3999986340604,4" />
-                  <mssgle:LineSegment
-                    End="-45.3999986340604,22.9666652142338" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Foreach Loop Container\DFT_Read_XML\OLE DB Destination"
-          TopLeft="474.066645266944,576.733330663509" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT_Read_XML.Paths[Output 0]"
-          TopLeft="601.1666372079,527.46666425599">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-41.4999919409556,49.266666407519"
-              Start="0,0"
-              End="-41.4999919409556,41.766666407519">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.6333332037595" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.6333332037595"
-                    Point2="0,24.6333332037595"
-                    Point3="-4,24.6333332037595" />
-                  <mssgle:LineSegment
-                    End="-37.4999919409556,24.6333332037595" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-37.4999919409556,24.6333332037595"
-                    Point2="-41.4999919409556,24.6333332037595"
-                    Point3="-41.4999919409556,28.6333332037595" />
-                  <mssgle:LineSegment
-                    End="-41.4999919409556,41.766666407519" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
